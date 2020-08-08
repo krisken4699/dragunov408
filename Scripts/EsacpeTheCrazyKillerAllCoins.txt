@@ -1,0 +1,9 @@
+--EsacpeTheCrazyKillerAllCoins
+plr   = game:GetService("Players").LocalPlayer;
+coins = game:GetService("Workspace").CurrentMap.Coins;
+
+for i,v in pairs(coins:GetDescendants()) do
+   if v.Name == "Coin" then
+        v.CFrame = plr.Character.HumanoidRootPart.CFrame;
+    end;
+end;
